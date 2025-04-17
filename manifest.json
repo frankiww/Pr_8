@@ -1,0 +1,27 @@
+{
+    "name": "Задачи",
+    "short_name": "PWA",
+    "start_url": "/frontend/index.html",
+    "display": "standalone",
+    "background_color": "#EDF2F4",
+    "theme_color": "#2B2D42",
+    "description": "Пример прогрессивного веб-приложения",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "icons/favicon-96x96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/web-app-manifest-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/web-app-manifest-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }

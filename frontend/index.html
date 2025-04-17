@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Список задач</title>
+
+        <link rel="manifest" href="../manifest.json">
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+        <link rel="shortcut icon" href="/icons/favicon.ico" />
+    </head>
+    <body>
+        <h1>Список задач ദ്ദി( • ᴗ - ) ✧</h1>
+        <p id="offline">Офлайн-режим</p>
+        <button id="subscribeButton"></button>
+        <div id="taskForm">
+            <form id="addTask">
+                <textarea id="task" placeholder="Задача" required></textarea>
+                <textarea id="taskDesc" placeholder="Дополнительные сведения (не обязательно)"></textarea>
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+        
+        <div class="filters">
+            <label> <input type="radio" name="filter" value="all" checked/> Все</label>
+            <label> <input type="radio" name="filter" value="active" /> Активные</label>
+            <label> <input type="radio" name="filter" value="completed" /> Выполненные</label>
+         </div>
+
+        <div id="tasks"></div>
+
+        <script src="app.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
